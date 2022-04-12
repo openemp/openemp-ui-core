@@ -1,9 +1,9 @@
 {
-  "name": "@openemp-mf/core",
+  "name": "@openemp/core",
   "repository": "git@github.com:openemp/openemp-ui-core.git",
   "author": "OpenEMP",
   "license": "MIT",
-  "version": "0.0.1-latest",
+  "version": "0.0.1",
   "description": "OpenEMP UI Core MF",
   "scripts": {
     "lint": "eslint src",
@@ -30,7 +30,7 @@
     "@babel/plugin-proposal-object-rest-spread": "7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
-    "@openemp-mf/styleguide": "file:../openemp-ui-styleguide",
+    "@openemp/styleguide": "^0.0.2",
     "@testing-library/react": "^10.0.4",
     "@types/jest": "^25.2.3",
     "autoprefixer": "9.8.0",
