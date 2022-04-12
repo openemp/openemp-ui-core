@@ -1,8 +1,8 @@
 import React from 'react';
 import { mountRootParcel } from 'single-spa';
 import ParcelComponent from 'single-spa-react/parcel';
-import { createJss, rtl, jssPreset, StylesProvider, useTheme } from '@openemp-mf/styleguide';
-import { withAuth } from '@openemp-mf/login';
+import { createJss, rtl, jssPreset, StylesProvider, useTheme } from '@openemp/styleguide';
+import { withAuth } from '@openemp/login';
 
 // eslint-disable-next-line no-undef
 const remoteImport = async (url) => System.import(url);
@@ -16,7 +16,7 @@ const Root = () => {
     document.querySelector('body').setAttribute('dir', lang.dir);
   }
 
-  return ['@openemp-mf/navbar', '@openemp-mf/drawer'].map((ele) => (
+  return ['@openemp/navbar', '@openemp/drawer'].map((ele) => (
     <ParcelComponent
       key={ele}
       config={remoteImport(ele)}
